@@ -1,0 +1,22 @@
+@import '../../components/projectItem/projectItem.wxss';
+@import '../../components/comment/comment.wxss';
+
+.littleTitle{
+    width: 100%;
+    height: 87rpx;
+    background: #efeff4;
+    line-height: 87rpx;
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    color: #888888;
+    font-size: 30rpx;
+    border-bottom: 1px solid #eaeaea;
+}
+.listLie{
+    width: 100%;
+    background: #efeff4;
+}
+
+.listLie1{
+    padding-bottom: 0
+}

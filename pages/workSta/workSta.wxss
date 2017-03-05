@@ -1,0 +1,46 @@
+/* pages/workSta/workSta.wxss */
+.line{
+    content:'';
+    position: fixed;
+    width:1px;
+    height:100%;
+    top:0;
+    left:42rpx;
+    background-color: #57b2ff;
+    z-index: 1;
+}
+.item{
+    position: relative;
+    z-index: 2;
+    margin: 25rpx 30rpx;
+}
+.item-icon{
+    width:60rpx;
+}
+.item-icon_img{
+    width:35rpx;
+    height:26rpx;
+}
+.item-cnt{
+    flex:1;
+    font-size: 32rpx; 
+    height:120rpx;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.item-date{
+    height:100%;
+    width:116rpx;
+    background-color: #57b2ff;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    flex-direction:column;
+}
+.item-text{
+    height:100%;
+    flex:1;
+    color:#353535;
+    background-color: #ffffff;
+    padding: 15rpx;
+}

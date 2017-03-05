@@ -1,0 +1,6 @@
+<template name="chartPie">
+    <view>
+        <canvas canvas-id="{{canvasId}}" 
+            style="margin:0 auto;width:{{width}}px;height:{{height}}px;" />
+    </view>
+</template>

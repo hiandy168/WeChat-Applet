@@ -1,0 +1,27 @@
+
+<view class="comment-box flex" style="height:{{__commentData__.show ? '100%' : '100rpx'}}">
+    <view class="comment-edit" animation="{{__commentData__.animationData}}" >
+        <view class="comment-edit-top flex" >
+            <view class="comment-edit-top_title">点评</view>
+            <view class="comment-edit-top_btns">
+                <image class="comment-edit-top_btn" src="{{__commentData__.icon_ok}}" style="background-color:#57b2ff" bindtap="__commentEvent_onTapOk" ></image>
+                <image class="comment-edit-top_btn" src="{{__commentData__.icon_close}}" style="background-color:#d2d2d2" bindtap="__commentEvent_onTapClose" ></image>
+            </view>
+        </view>
+        <view class="comment-edit-cnt" >
+            <textarea class="comment-edit-cnt_text" placeholder="请输入点评意见" bindinput="__commentEvent_onInputComment" value="{{__commentData__.defval}}" hidden="{{!__commentData__.show}}" />
+        </view>
+    </view>
+
+    <view class="comment-bar flex">
+        <view class="comment-barbtn flex" bindtap="__commentEvent_onTapWorksta" >
+            <image class="comment-barbtn_icon" src="{{__commentData__.icon_worksta}}"></image>
+            <text class="comment-barbtn_text">工程进度详情</text>
+        </view>
+        <view class="comment-line"></view>
+        <view class="comment-barbtn flex" bindtap="__commentEvent_onTapShow" >
+            <image class="comment-barbtn_icon" src="{{__commentData__.icon_msg}}"></image>
+            <text class="comment-barbtn_text">点评</text>
+        </view>
+    </view>
+</view>

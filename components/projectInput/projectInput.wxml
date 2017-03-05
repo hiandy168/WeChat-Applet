@@ -1,0 +1,18 @@
+<!--components/projectInput/projectInput.wxml-->
+<template name="projectInput">
+  <view class="project-item flex">
+    <view class="project-item-title ">{{title}}</view>
+
+    <input wx:if="{{type=='input'}}" class="project-item-input" bindinput="onValueChange" data-key="{{index}}"  value="{{defVal}}" placeholder="{{placeholder}}" />
+
+    <textarea auto-height wx:if="{{type=='text'}}" class="project-item-input" bindinput="onValueChange" data-key="{{index}}"  value="{{defVal}}" placeholder="{{placeholder}}" />
+
+    <picker wx:if="{{type=='select'}}" bindchange="onValueChange" data-key="{{index}}" value="{{defVal}}" range="{{range}}" class="project-item-input" >
+      <view class="project-item-picker_value txt-hide">
+        {{range[defVal]}}
+      </view>
+      <view class="project-item-picker_arrow">></view>
+    </picker>
+
+  </view>
+</template>

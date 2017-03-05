@@ -1,0 +1,17 @@
+
+<import src="../../components/chartPie/chartPie.wxml"/>
+
+<view class="container" >
+
+    <view class="panel">
+        <view class="panel-title">项目总览</view>
+        <template is="chartPie" data="{{...__chartPieData__, canvasId}}"></template>
+    </view>
+
+    <navigator url="/pages/list/list" class="link flex" >
+        <text>项目管理</text>
+        <view class="link-arrow">></view>
+    </navigator>
+
+</view>
+

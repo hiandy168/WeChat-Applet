@@ -1,0 +1,31 @@
+/* components/projectInput/projectInput.wxss */
+.project-item{
+    padding:0 30rpx;
+    min-height:90rpx;
+    background-color: #ffffff;
+    font-size: 30rpx;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 42rpx;
+}
+.project-item-title{
+    width:170rpx;
+    color:#000;
+}
+.project-item-input{
+    position: relative;
+    flex:1;
+    line-height:90rpx;
+}
+textarea{
+    padding: 5px 0;
+}
+.project-item-picker_value{
+    color:#353535;
+}
+.project-item-picker_arrow{
+    position: absolute;
+    right:0;
+    top:0;
+    color:#999;
+    font-weight: bold;
+}

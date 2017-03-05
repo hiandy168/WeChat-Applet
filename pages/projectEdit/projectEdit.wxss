@@ -1,0 +1,25 @@
+/* pages/project/project.wxss */
+@import '../../components/projectInput/projectInput.wxss';
+
+.littleTitle {
+  width: 100%;
+  height: 87rpx;
+  background: #efeff4;
+  line-height: 87rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+  color: #888;
+  font-size: 30rpx;
+  border-bottom: 1px solid #eaeaea;
+  flex: 1;
+}
+.submit{
+  font-size: 34rpx;
+  color: #fff;
+  line-height: 100rpx;
+  height:100rpx;
+  text-align: center;
+  background-color: #57b2ff;
+}
+
+

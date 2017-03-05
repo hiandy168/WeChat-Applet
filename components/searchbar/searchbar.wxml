@@ -1,0 +1,7 @@
+<template name="searchbar">
+    <view class="searchbar" bindtap="onSearch" >
+        <view class="searchbar-ico {{searchbarFlag?'':'active'}}" catchtap="onSearchStart" >搜索</view>
+        <input class="searchbar-input" hidden="{{searchbarFlag}}" placeholder="{{placeholder}}" focus="{{searchbarFocus}}" bindinput="onInput" bindblur="onBlur" value="{{searchbarStr}}" />        
+        <view class="searchbar-close" hidden="{{searchbarFlag}}" catchtap="onSearchCancel"></view>
+    </view>
+</template>

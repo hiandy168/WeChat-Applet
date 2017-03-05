@@ -1,0 +1,7 @@
+
+<template name="projectItem">
+   <view class="listLieItem flex">
+      <view class="listLieLeft"> {{title}}</view>
+      <view class="listLieRight">{{value}}</view>
+    </view>
+</template>

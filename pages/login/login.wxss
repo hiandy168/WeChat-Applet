@@ -1,0 +1,43 @@
+@import '../../components/inputLogin/inputLogin.wxss';
+
+.login-bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #2e8bd9;
+}
+.login-cnt{
+    position:relative;
+    text-align: center;
+    width:690rpx;
+}
+.login-logo{
+    width: 220rpx;
+    height: 220rpx;
+    border-radius: 50%;
+    border:15rpx solid rgba(255,255,255,.3);
+    margin-top: 80px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 0 20rpx rgba(255,255,255,.1);
+}
+.login-btn{
+    height:50rpx;
+    line-height: 50rpx;
+    border: 1px solid #3a3a3a;
+    border-radius: 3px;
+    padding: 5px 0;
+    margin:15px 0;
+    background-color:#3a3a3a;
+    color:#ffffff;
+}
+.login-reset{
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+}
+.login-url{
+    display: inline;
+    padding-right: 5px;
+}

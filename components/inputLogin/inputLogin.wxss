@@ -1,0 +1,39 @@
+.inputlogin-box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #78b3e7;
+  border-radius: 3px;
+  height:70rpx;
+  margin:15px 0;
+  background-color:rgba(255,255,255,.1);
+}
+.inputlogin-icon{
+    width:50rpx;
+    height:50rpx;
+    margin: 0 10px;
+}
+.inputlogin-input{
+    flex:1;
+    height:50rpx;
+    line-height: 50rpx;
+    border-left:1px solid #78b3e7;
+    color:#fff;
+    text-align:left;
+    padding: 0 10px;
+    font-size:14px;
+}
+.inputlogin-btn{
+    font-size: 14px;
+    height:70rpx;
+    line-height: 70rpx;
+    padding: 0 10px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    border-radius: 3px;
+}
+.inputlogin-btn.disable{
+    background-color: #999999;
+    color:#dddddd;
+}

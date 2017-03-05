@@ -1,0 +1,7 @@
+<template name="inputLogin">
+    <view class="inputlogin-box">
+        <image class="inputlogin-icon" src="{{icon}}"></image>
+        <input class="inputlogin-input" type="number" placeholder="{{placeholder}}" value="{{defval}}" bindinput="inputEvent" data-type="{{type}}" placeholder-style="color:#78b3e7"/>
+        <view class="inputlogin-btn {{btnFlag?'':'disable'}}" wx:if="{{type=='code'}}" bindtap="btnEvent"  >{{btnText}}</view>
+    </view>
+</template>

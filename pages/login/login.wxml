@@ -1,0 +1,17 @@
+
+<import src="../../components/inputLogin/inputLogin.wxml"/>
+    
+<view class="container">
+    <image class="login-bg" src="{{login_bg}}" mode="scaleToFill" ></image>
+    <view class="login-cnt">
+        <image class="login-logo" src="{{logo}}" mode="scaleToFill" ></image>
+        <template is="inputLogin" data="{{...inputData_phone}}"></template>
+        <template is="inputLogin" data="{{...inputData_code}}"></template>
+
+        <view class="login-btn" bindtap="onLogin">登录</view>
+
+    </view>
+    
+</view>
+
+<include src="../../components/common.wxml"/>

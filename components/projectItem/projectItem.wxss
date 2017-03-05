@@ -1,0 +1,18 @@
+.listLieItem {
+  width:100%;
+  height:90rpx;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  background: #fff;
+  line-height: 42rpx;
+}
+.listLieLeft {
+  color: #000;
+  width: 170rpx;
+}
+.listLieRight {
+  flex:1;
+  color: #353535;
+}

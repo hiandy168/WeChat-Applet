@@ -1,0 +1,13 @@
+<import src="../../components/projectInput/projectInput.wxml" />
+<import src="../../components/projectSel/projectSel.wxml" />
+
+<view>
+    <block wx:for="{{inputItems}}" >
+        <view wx:if="{{item.type == 'title'}}" class="littleTitle">{{item.value}}</view>
+        <view wx:elif="{{item.type == 'bar'}}" class="panel-bar">null</view>
+
+        <template wx:else is="projectInput" data="{{...item, index}}"></template>
+
+    </block>
+    <view class="submit" bindtap="onSubmit">确定</view>
+</view>

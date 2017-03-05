@@ -1,0 +1,32 @@
+/**index.wxss**/
+.container{
+    background-color: #3a3a3a;
+}
+.panel{
+    background-color:#ffffff;
+    margin:20rpx 30rpx;
+    border-radius: 5px;
+    padding:30rpx;
+    padding-bottom: 80rpx;
+}
+.panel-title{
+    font-size: 36rpx;
+    line-height: 60rpx;
+    border-bottom: 1px solid #57b2ff;
+    margin-bottom: 80rpx;
+}
+.link{
+    width: 690rpx;
+    font-size: 36rpx;
+    line-height: 70rpx;
+    background-color: #57b2ff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 20rpx 30rpx;   
+    justify-content: space-between;
+}
+.link-arrow{
+    font-weight: bold;
+}
+

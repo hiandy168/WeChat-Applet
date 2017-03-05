@@ -1,0 +1,33 @@
+<import src="../../components/searchbar/searchbar.wxml"/>
+
+<view class="container">
+    <view class="searchbar-panel">
+        <template is="searchbar" data="{{...__searchbarData__}}" ></template>
+    </view>
+    
+    <scroll-view scroll-y="{{true}}" style="height:{{scroll_height}}px" bindscrolltolower="loadMore" >
+        <navigator url="/pages/projectEdit/projectEdit" class="scroll-item add-item flex">
+            项目管理
+        </navigator>
+
+        <view class="scroll-item list-item flex" wx:for="{{list}}" wx:key="unique" bindtap="goDetial" data-id="{{item.id}}">
+            <view class="list-item-text">
+                <view class="txt-hide list-item-text_title">{{item.xmmc}}({{item.hylx}})</view>
+                <view class="txt-hide list-item-text_tip">{{item.jsdw}}</view>
+                <view class="txt-hide list-item-text_tip">{{item.jsdwzrr}}</view>
+            </view>
+            <view class="list-item-btns flex">
+                <view class="list-item-btn" catchtap="goEdit" data-id="{{item.id}}">
+                    <image  class="list-item-btn_img" src="{{icon_edit}}" mode="scaleToFill" style="background-color:#57b2ff"></image>
+                </view>
+                <view class="list-item-btn" catchtap="goDel" data-id="{{item.id}}" data-xmmc="{{item.xmmc}}">
+                    <image  class="list-item-btn_img" src="{{icon_del}}" mode="scaleToFill" style="background-color:#d2d2d2"></image>
+                </view>
+            </view>
+        </view>
+        <view class="nomore flex" hidden="{{moreFlag}}">
+            <text class="nomore-txt" >已经到底了</text>
+        </view>
+    </scroll-view>   
+</view>
+

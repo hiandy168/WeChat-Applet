@@ -1,0 +1,14 @@
+<import src="../../components/projectItem/projectItem.wxml" />
+
+<view>
+    <block wx:for="{{listItems}}" >    
+      <view wx:if="{{item.title == 'title'}}" class="littleTitle">{{item.value}}</view>
+
+      <view wx:elif="{{item.title == 'bar'}}" class="panel-bar">null</view>
+
+      <template wx:else is="projectItem" data="{{...item}}" ></template>
+    </block>
+</view>
+
+
+<include src="../../components/comment/comment.wxml"/>
